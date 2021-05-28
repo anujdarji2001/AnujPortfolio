@@ -538,6 +538,11 @@ font-weight: 400;
 /*  Media Query  */
 
 @media(max-width: 768px) {
+
+    html , body {
+        width: 100%;
+        overflow-x: hidden;
+    }
     
     .header {
         background-image: linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)), url('../img/img5.jpg');
