@@ -322,6 +322,8 @@ font-weight: 400;
 .fa-university, .fa-sticky-note , .fa-line-chart, .fa-bar-chart{
     font-size: 2rem;
     margin-right: 1rem;
+    border: none;
+    text-decoration: none;   
 }
 
 .education {
@@ -403,6 +405,11 @@ font-weight: 400;
     font-size: 3rem;
     border: none;
     text-align: center;
+    text-decoration: none;
+}
+
+.fa-calendar, .fa-check-square-o, .fa-battery-full {
+    border: none;
     text-decoration: none;
 }
 
@@ -529,7 +536,7 @@ font-weight: 400;
 /*  Media Query  */
 
 @media(max-width: 768px) {
-
+    
     .header {
         background-image: linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)), url('../img/img5.jpg');
     }
