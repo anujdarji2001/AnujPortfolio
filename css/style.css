@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#preloader {
+    width: 100%;
+    position: fixed;
+    height: 100vh;
+    background: #fff  url('../img/Cube.gif') no-repeat center;
+    z-index: 9999;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #606060;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)), url('../img/img4.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0%, 100% 78%, 50% 100%, 0 78%, 0 0);
+    position: relative;
+}
+
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+    opacity: 20%;
+    z-index: -1;
+}
+
+.navbar::before{
+
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+    opacity: 20%;
+    z-index: -1;
+}
+
+.nav-item a {
+    color: #000!important;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.navheader{
+    color: #000!important;
+    font-weight: 700;
+    font-size: 2.3rem;
+    font-family: 'Gochi hand',sans-serif;    
+}
+
+.header-section {
+    width: 100%;
+    height: inherit;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.center-div {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+
+.header-buttons a {
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.header-buttons a:hover{
+    color: #16c9f6;
+    background: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.4);
+}
+
+.center-div p {
+    font-size: 1.5rem;
+    padding: 0 0 20px 0;
+    color: #fff;
+}
+
+
+.Wrapper {
+    display: inline-flex;
+}
+
+.Wrapper .static_text{
+    color: #fff;
+    font-size: 3.9rem;
+    font-weight:300;
+    margin-left: 1rem;
+}
+
+.Wrapper .dynamic_text{
+    justify-content: center;
+    margin-left: 1.2rem;
+    height: 105px;
+    line-height: 105px;
+    overflow: hidden;
+}
+
+.dynamic_text li {
+    color:#fff;
+    list-style: none;
+    font-size: 2.9rem;
+    font-weight: 400;
+    position: relative;
+    top: 0;
+    text-align: left;
+    animation: slide 6s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -420px;
+    }
+}
+
+.dynamic_text li span{
+    position: relative;
+}
+
+.dynamic_text li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    margin-top: 1.6rem;
+    height: 100%;
+    width: 100%;
+    animation: typing 1.5s steps(12) infinite;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin-left: 6rem;
+    }    
+}
+
+.fa {
+    padding: 10px;
+    font-size: 18px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 1.5px solid #fff;
+  }
+  
+  .fa:hover {
+    opacity: 0.6;  
+    text-decoration: none;
+  }
+  
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-facebook:hover, .fa-twitter:hover, .fa-instagram:hover, .fa-linkedin:hover, .fa-github:hover {
+    color: white;   
+  }
+  
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #d63d97;
+    color: white;
+  }
+  
+  .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  .fa-github{
+      background: #000;
+      color: #fff;
+  }
+  
+  .socialicons {
+      margin-top: 2rem;
+  }
+
+  .heading {
+      margin-top: 2rem;
+  }
+
+  .startingfontheading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+  }
+
+  .aboutsec {
+    width: 100%;
+    height: 180vh;
+    padding: 15px 0;
+    position: relative;
+}
+
+  .imgdiv img{
+      width: 42%;
+      border-radius: 8rem;
+      margin-bottom: 2rem;
+  }
+
+  .below-img-buttons a{
+    
+    border: 1px solid #55ACEE;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #55ACEE;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .below-img-buttons a:hover{
+    color: #fff;
+    background: #55ACEE;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.4);
+}
+
+.main_right {
+    margin-top: 4rem;
+    padding: 1rem;
+}
+
+
+.main_right .main_rr {
+    margin-left: 0.5rem;
+    padding-left: 1.5rem;
+}
+
+.main_right .main_rl {
+    margin-left: -15px;
+}
+
+.main_right .info-item p{
+font-weight:600;
+padding:10px 0;
+font-size:20px;
+color:#302e4d;
+margin:0;
+border-bottom:1px solid #aaaaaa;
+}
+
+.main_right .info-item p span{
+font-weight:100;
+color:#55ACEE;
+margin-left:4px;
+display:inline-block;
+font-weight: 400;
+}
+
+.fa-university, .fa-sticky-note , .fa-line-chart, .fa-bar-chart{
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.education {
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.education .timelinescollection {
+    border: 3px solid #d4d4e3;
+    border-radius:10px;
+    margin-top: 2rem;
+}
+
+.about_left .education .timeline, .about_right .education .timeline{
+    background-color:#fdf9ff;
+    padding:15px 5px;
+    width:100%;
+    position:relative;
+}
+
+.about_left .education .timeline .timeline-item, .about_right .education .timeline .timeline-item{
+	position:relative;
+	padding-left:37px;
+	padding-bottom:50px;
+}
+
+
+.about_left .education .timeline .timeline-title, .about_right .education .timeline .timeline-title{
+	font-weight:700;
+    font-size:18px;
+    margin-bottom:5px;
+    text-transform:capitalize;
+    color:#55ACEE;
+}
+
+.about_left .education .timeline .timeline-text, .about_right .education .timeline .timeline-text{
+	font-size:16px;
+	line-height:25px;
+	color:#504e70;
+    margin-left: 1rem;   
+    text-align: justify;
+    margin-right: 1rem;
+}
+
+.education .timelinescollection:hover {
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    transform: translateY(-15px);
+    border: 1px solid #000;
+}
+
+.skillsec {
+    width: 100%;
+    height: 100vh;
+    padding: 5px 0;
+    position: relative;
+}
+
+.skill_left, .skill_right {
+    margin-top: 2rem;
+}
+
+.skill_left .codingskill {
+    border-right: 3px solid #d4d4e3;
+    margin-top: 3rem;
+}
+
+.skill_right .extraskils {
+    border: medium none;
+    padding: 50px;
+    border-radius: 3px;
+    text-align: center;
+    background-color: #fdf9ff;
+    margin-top: 1.6rem;
+}
+
+.fa-calculator, .fa-code, .fa-font{
+    margin-top: 1rem;
+    margin-left: -15px;
+    font-size: 3rem;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+.carousel-indicators {
+    margin-bottom: -30px;
+}
+
+.carousel-indicators li {
+    background-color: #55ACEE!important;
+}
+
+.skill_right .extraskils .slideritem {
+    border: 3px solid #d4d4e3;
+    border-radius:10px;
+}
+
+.skill_right .extraskils .slideritem .boxheading{
+    color: #007bff;
+}
+
+.skill_right .extraskils .slideritem .slideritempara {
+    font-size: 18px;
+    margin: 2.2rem;
+}
+
+.contactsec {
+    width: 100%;
+    height: 100vh;
+    padding: 100px 0;
+    position: relative;
+}
+
+.formcontact {
+    height: 250px;
+    width: 400px;
+    margin-top: 0.7rem;
+}
+
+.form-button button {
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 10px 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #000;
+    background-color: #99def7;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}
+.form-button button:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.4);
+    background-color: #fff;
+    color: #000;
+}
+.form-control:hover {
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+
+.contactuspage {
+    margin-top: 2rem;
+}
+
+.contactuspage .formcontact .map {
+    margin-top: 1rem;
+    margin-bottom: 10rem;
+}
+
+.footercontactsec {
+    text-align: center;
+}
+
+.fa-phone, .fa-map-marker, .fa-envelope {
+    margin-top: 2rem;
+    font-size: 2rem;
+    border: none;
+    text-decoration: none;   
+}
+
+.nav-itemfoot {
+    display: inline-block;
+}
+.nav-itemfoot a {
+
+    color: #606060;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.nav-itemfoot a:hover {
+    color: #000;
+}
+
+.footersection {
+    width: 100%;
+    height: auto;
+    padding: 30px 0 20px 0;
+    background: #99def7;
+    position: relative;
+}
+
+.footersection .socialicons {
+    margin-top: 0;
+}
+
+#myBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    color: #fff;
+    background: #000;
+    border-radius: 10px;
+}
+
+#myBtn:hover {
+    background: #3a3939;
+    color: #fff;
+}
+
+
+/*  Media Query  */
+
+@media(max-width: 768px) {
+
+    .header {
+        background-image: linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)), url('../img/img5.jpg');
+    }
+
+    .nav-item {
+        text-align: center!important;
+    }
+    
+    .main_left .imgdiv {
+        display: grid;
+        place-items: center;
+    }
+    .main_right .main_rl {
+        margin-left: 1.2rem;
+    }
+
+    .aboutsec {
+        height: auto;
+    }
+    .skillsec {
+        height: auto;
+    }
+
+    .skill_left .codingskill {
+        border-right: none;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    
+    .contactsec {
+        height: auto;
+        margin-bottom: 5rem;
+    }
+}
