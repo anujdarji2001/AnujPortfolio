@@ -410,7 +410,11 @@ font-weight: 400;
 
 .fa-calendar, .fa-check-square-o, .fa-battery-full {
     margin-top: 0.5rem;
+<<<<<<< HEAD
     font-size: 2rem;
+=======
+    font-size: 1rem;
+>>>>>>> c4bc83331aaa0b27b4763cb706a16d9ce57f2ed4
     border: none;
     text-decoration: none;
 }
@@ -578,6 +582,7 @@ input::placeholder {
         margin-bottom: 5rem;
     }
 }
+<<<<<<< HEAD
 
 @media(max-width: 1024px) {
 
@@ -609,3 +614,5 @@ input::placeholder {
     }
 
 }
+=======
+>>>>>>> c4bc83331aaa0b27b4763cb706a16d9ce57f2ed4
