@@ -411,7 +411,6 @@ font-weight: 400;
 .fa-calendar, .fa-check-square-o, .fa-battery-full {
     margin-top: 0.5rem;
     font-size: 2rem;
-    font-size: 1rem;
     border: none;
     text-decoration: none;
 }
@@ -610,5 +609,3 @@ input::placeholder {
     }
 
 }
-
-
