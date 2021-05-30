@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/ad.jpg" type="image/png">
 
+    <link rel="stylesheet" class="alternate-style" title="pink" href="css/pink.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="orange" href="css/orange.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="red" href="css/red.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="green" href="css/green.css" type="text/css" disabled>
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -410,10 +415,28 @@
             <div class="scroll-top float-right">
                 <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
             </div>
+
+            <!-- top buttom ends-->
         </div>
     </footer>
-    <script>
+    <div class="style-switcher">
+        <div class="toggle-style-switcher">
+            <i class="fa fa-cog fa-spin"></i>
+        </div>
+        <h5>Style Switcher</h5>
+        <ul>
+            <li><a title="pink" style="background-color:#ff5ccd" onclick="setActiveStyle('pink')"></a></li>
+            <li><a title="blue" style="background-color:#007bff" onclick="setActiveStyle('blue')"></a></li>
+            <li><a title="orange" style="background-color:#ff8c00" onclick="setActiveStyle('orange')"></a></li>
+            <li><a title="yellow" style="background-color:#fe2712" onclick="setActiveStyle('red')"></a></li>
+            <li><a title="green" style="background-color:#18d17b" onclick="setActiveStyle('green')"></a></li>		
+        </ul>
+    </div>
 
+    <!--Style-Switcher ends-->
+
+    <script>
+        
         var preloader = document.getElementById('preloader');
 
         function loadingFunc(){
@@ -435,6 +458,25 @@
             document.body.scrollTop=0;
             document.documentElement.scrollTop=0;
             }
+        
+        document.querySelector(".toggle-style-switcher").addEventListener("click",()=>{ 
+        document.querySelector(".style-switcher").classList.toggle("open");
+        })
+
+        const links = document.querySelectorAll(".alternate-style");  
+        
+        function setActiveStyle(color) {
+            for(let i=0;i<links.length;i++) {
+                if(color===links[i].getAttribute("title")) {
+                    links[i].removeAttribute("disabled");
+                }
+                else
+                {
+                    links[i].setAttribute("disabled","true");
+                }
+            }
+        }
+
     </script>
 </body>
 </html>

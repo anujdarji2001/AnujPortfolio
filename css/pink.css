@@ -1,0 +1,64 @@
+.header {
+ 
+    background-image: linear-gradient(rgba(218, 150, 197, 0.5),rgba(192, 126, 172, 0.5)), url('../img/img4.jpg');
+}
+
+p{
+    color: #4e4e4e;
+}
+
+.header::before{
+    background: linear-gradient(to right, #d420a7 0%, #d85db9 0%, #610b64 100%);
+}
+
+.navbar::before{
+    background: linear-gradient(to right, #d420a7 0%, #d85db9 0%, #610b64 100%);
+}
+
+.header-buttons a:hover {
+    color: #ff5ccd;
+}
+
+.below-img-buttons a {
+    border: 1px solid #ff5ccd;
+    color: #ff5ccd;
+}
+
+.below-img-buttons a:hover{
+    background: #ff5ccd;
+}
+
+.main_right .info-item p span {
+    color: #ff5ccd;
+}
+
+.about_left .education .timeline .timeline-title, .about_right .education .timeline .timeline-title{
+    color: #ff5ccd;
+}
+
+.carousel-indicators li {
+    background-color: #ff5ccd!important;
+}
+
+.skill_right .extraskils .slideritem .boxheading{
+    color: #ff5ccd;
+}
+
+.fa-calculator, .fa-code, .fa-font {
+    color: #ff5ccd;
+}
+
+.form-button button {
+    background-color: #ffcff1;
+}
+
+.footersection {
+    background: #ffcff1;
+}
+
+@media(max-width: 768px) {
+    .header {
+        background-image: linear-gradient(rgba(255, 207, 241, 0.5),rgba(255, 207, 241, 0.5)), url('../img/img5.jpg');
+    }
+    
+}
