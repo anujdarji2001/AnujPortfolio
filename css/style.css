@@ -645,6 +645,14 @@ input::placeholder {
         margin-left: 1rem;
     }
     
+    .main_right .main_rr {
+        margin-left: 1.3rem;
+    }
+
+    .skill_right .extraskils{
+        margin-top: 1rem;
+    }
+
     .contactsec {
         height: auto;
         margin-bottom: 5rem;
