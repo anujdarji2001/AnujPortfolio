@@ -609,6 +609,46 @@ input::placeholder {
 
 /*  Media Query  */
 
+@media(max-width: 1024px) {
+
+    html , body {
+        width: 100%;
+        overflow-x: hidden;
+        font-size: 55%;
+    }
+
+    .aboutsec {
+        height: auto;
+    }
+
+    .main_right .main_rl #emailfont p span{
+        font-size:1.5rem;
+    }
+
+    .main_right .main_rr #emailfont p span{
+        font-size:1.5rem;
+    }
+
+    .skillsec {
+        height: auto;
+    }
+
+    .contactsec {
+        height: auto;
+        margin-bottom: 5rem;
+    }
+    .Wrapper .dynamic_text {
+        height: 90;
+        line-height: 90px;
+    }
+    @keyframes slide {
+        100% {
+            top: -360px;
+        }
+    }
+
+}
+
 @media(max-width: 768px) {
 
     html , body {
@@ -635,6 +675,19 @@ input::placeholder {
     .aboutsec {
         height: auto;
     }
+
+    .main_right .main_rr {
+        margin-left: 1.3rem;
+    }
+
+    .main_right .main_rl #emailfont p span{
+        font-size:2rem;
+    }
+
+    .main_right .main_rr #emailfont p span{
+        font-size:2rem;
+    }
+
     .skillsec {
         height: auto;
     }
@@ -645,10 +698,6 @@ input::placeholder {
         margin-left: 1rem;
     }
     
-    .main_right .main_rr {
-        margin-left: 1.3rem;
-    }
-
     .skill_right .extraskils{
         margin-top: 1rem;
     }
@@ -657,35 +706,7 @@ input::placeholder {
         height: auto;
         margin-bottom: 5rem;
     }
-}
-
-@media(max-width: 1024px) {
-
-    html , body {
-        width: 100%;
-        overflow-x: hidden;
-        font-size: 55%;
-    }
-
-    .aboutsec {
-        height: auto;
-    }
-    .skillsec {
-        height: auto;
-    }
-
-    .contactsec {
-        height: auto;
-        margin-bottom: 5rem;
-    }
-    .Wrapper .dynamic_text {
-        height: 90;
-        line-height: 90px;
-    }
-    @keyframes slide {
-        100% {
-            top: -360px;
-        }
-    }
 
 }
+
+
