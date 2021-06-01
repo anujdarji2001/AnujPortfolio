@@ -28,6 +28,7 @@ a:hover{
 }
 li{
     list-style: none;
+    padding: 0.8rem;
 }
 
 p{
@@ -139,14 +140,14 @@ p{
     color: #fff;
     font-size: 6rem;
     font-weight:300;
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 .Wrapper .dynamic_text{
     justify-content: center;
     margin-left: 1.2rem;
-    height: 100px;
-    line-height: 100px;
+    height: 87px;
+    line-height: 87px;
     overflow: hidden;
 }
 
@@ -163,7 +164,7 @@ p{
 
 @keyframes slide {
     100% {
-        top: -400px;
+        top: -410px;
     }
 }
 
@@ -634,12 +635,12 @@ input::placeholder {
         margin-bottom: 5rem;
     }
     .Wrapper .dynamic_text {
-        height: 90;
-        line-height: 90px;
+        height: 75;
+        line-height: 75px;
     }
     @keyframes slide {
         100% {
-            top: -360px;
+            top: -355px;
         }
     }
 
