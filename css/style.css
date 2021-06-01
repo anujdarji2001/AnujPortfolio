@@ -625,10 +625,6 @@ input::placeholder {
         font-size:1.5rem;
     }
 
-    .main_right .main_rr #emailfont p span{
-        font-size:1.5rem;
-    }
-
     .skillsec {
         height: auto;
     }
@@ -681,10 +677,6 @@ input::placeholder {
     }
 
     .main_right .main_rl #emailfont p span{
-        font-size:2rem;
-    }
-
-    .main_right .main_rr #emailfont p span{
         font-size:2rem;
     }
 
