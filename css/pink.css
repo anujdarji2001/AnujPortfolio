@@ -56,6 +56,10 @@ p{
     background: #ffcff1;
 }
 
+.value {
+    background: #ff5ccd;
+}
+
 @media(max-width: 768px) {
     .header {
         background-image: linear-gradient(rgba(255, 207, 241, 0.5),rgba(255, 207, 241, 0.5)), url('../img/img5.jpg');
