@@ -706,6 +706,11 @@ input::placeholder {
 	list-style: none;
 	margin-bottom: 20px;
 }
+
+.bar p {
+    font-size: 2rem;
+}
+
 .bar li .bar-wrap {
 	background: #79787e;
     height: 1.5rem;
