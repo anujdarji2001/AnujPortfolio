@@ -395,7 +395,7 @@ font-weight: 400;
     border-radius: 3px;
     text-align: center;
     background-color: #fdf9ff;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 
@@ -704,17 +704,20 @@ input::placeholder {
 
 .bar li {
 	list-style: none;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 .bar li .bar-wrap {
 	background: #79787e;
+    height: 1.5rem;
 }
 .bar li span {
 	background: #3e3d42;
+    height: 1.5rem;
 }
 .bar li span {
 	overflow: visible !important;
 	position: relative;
+    height: 1.5rem;
 }
 .value1 span {
 	display: none !important;
@@ -737,7 +740,7 @@ input::placeholder {
 
 .bar li span {
 	display: block;
-	height: 21px;
+	height: 1.5rem;
 	width: 0;
 }
 .bar p {
