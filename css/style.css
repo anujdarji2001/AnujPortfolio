@@ -141,7 +141,7 @@ p{
     font-weight:300;
     margin-left: 2rem;
 }
-
+/* 
 .Wrapper .dynamic_text{
     justify-content: center;
     margin-left: 1.2rem;
@@ -186,6 +186,64 @@ p{
         left: 100%;
         margin-left: 6rem;
     }    
+} */
+
+
+.Wrapper div {
+    position: relative;
+    justify-content: center;
+    margin-left: 1.2rem;
+    height: 10rem;
+    line-height: 10rem;
+    overflow: hidden;
+}
+
+.Wrapper div li {
+    font-weight: 400;
+    font-size: 4.5rem;
+    padding: 0 1rem;
+    height: 8.9rem;
+    text-align: left;
+    display: block;
+}
+
+.dynamic_text {
+    animation: flip4 10s cubic-bezier(0.23,1,0.32,1.2) infinite;
+}
+
+@keyframes flip4 {
+    0% {
+        margin-top: -360px;
+    }
+    5% {
+        margin-top: -270px;
+    }
+    25% {
+        margin-top: -270px;
+    }
+    30% {
+        margin-top: -180px;
+    }
+    50% {
+        margin-top: -180px;
+    }
+    55% {
+        margin-top: -90px;
+    }
+    75% {
+        margin-top: -90px;
+    }
+    80% {
+        margin-top: 0px;
+    }
+    99.99% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: -270px;
+    }
+    
+    
 }
 
 .fa {
@@ -630,20 +688,17 @@ input::placeholder {
         height: auto;
     }
 
+    .bar {
+        margin-top: 5rem;
+    }
+
     .contactsec {
         height: auto;
         margin-bottom: 5rem;
     }
-    .Wrapper .dynamic_text {
-        height: 87px;
-        line-height: 87px;
+    .Wrapper div li {
+        height: 10.2rem;
     }
-    @keyframes slide {
-        100% {
-            top: -345px;
-        }
-    }
-
 }
 
 @media(max-width: 768px) {
@@ -698,6 +753,10 @@ input::placeholder {
     .contactsec {
         height: auto;
         margin-bottom: 5rem;
+    }
+
+    .Wrapper div li {
+        height: 10.2rem;
     }
 
 }
