@@ -66,3 +66,16 @@ p{
     }
     
 }
+
+
+.timelinescollectionproject .timelineproject .interntitle {
+    color: #ff8c00;
+}
+
+.timelineproject:hover .circle-dot {
+	background: #ff8c00;
+}
+
+.accimgleft .portfolio-item-inner:hover .portfolio-info, .accimgright .portfolio-item-inner:hover .portfolio-info{
+    border:4px solid #ff8c00;
+}
