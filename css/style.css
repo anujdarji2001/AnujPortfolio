@@ -59,6 +59,11 @@ p{
     z-index: -1;
 }
 
+.navbar-toggler-icon{
+    height: 35px!important;
+    width: 35px!important;
+}
+
 .navbar::before{
 
     content: "";
@@ -1006,6 +1011,8 @@ input::placeholder {
 		line-height:20px;
         border: none;
 	}
+
+
 
 /*  Media Query  */
 
