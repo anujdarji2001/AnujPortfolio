@@ -83,6 +83,11 @@ p{
     font-size: 2rem;
 }
 
+.nav-item a:hover {
+    color: #fff!important;
+    border-bottom: 3px solid #000;
+}
+
 .navheader{
     color: #000!important;
     font-weight: 700;
@@ -1051,6 +1056,11 @@ input::placeholder {
     .Wrapper div li {
         height: 10.2rem;
     }
+    
+    .nav-item a:hover {
+        color: #fff!important;
+        border-bottom: none;
+    }
 }
 
 @media(max-width: 768px) {
@@ -1131,5 +1141,11 @@ input::placeholder {
         margin-top: 6rem;
         margin-right: 2rem;
     }
+
+    .nav-item a:hover {
+        color: #fff!important;
+        border-bottom: none;
+    }
+    
 }
 
