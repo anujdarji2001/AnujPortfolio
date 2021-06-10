@@ -18,6 +18,8 @@
     <link rel="stylesheet" class="alternate-style" title="red" href="css/red.css" type="text/css" disabled>
     <link rel="stylesheet" class="alternate-style" title="green" href="css/green.css" type="text/css" disabled>
 
+    <script src="https://s3.amazonaws.com/myadvobuck/static/libs/typed.min.js"></script>
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -68,7 +70,7 @@
           </nav>
           <section class="header-section">
               <div class="center-div">
-                <div class="Wrapper">
+                <!-- <div class="Wrapper">
                     <span class="static_text">I'm</span>
                     <div>
                         <ul class="dynamic_text">
@@ -78,6 +80,9 @@
                             <li><span>Developer</span></li>
                         </ul>
                     </div>
+                </div> -->
+                <div class="wrapper">
+                    <span class="dyanmic_text">I'm <span class="animate"></span></span>
                 </div>
                   <p>Life is learning and I'm Learner</p>
                   <div class="header-buttons">
@@ -101,7 +106,13 @@
 
     <section class="aboutsec" id="aboutsec">
         <div class="container heading text-center">
-            <h1 class="text-center startingfontheading">About Me</h1>
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #bec4ca">
+                    About
+                </h1>
+                <h1 class="position-absolute">About Me</h1>
+            </div>
+            <!-- <h1 class="text-center startingfontheading">About Me</h1> -->
             <p class="text-capitalize pt-1">Thinker, Analyzer, Spiriter.</p>
         </div>
         <div class="container">
@@ -230,7 +241,13 @@
     <!--******** About Ends ******* -->
     <section class="skillsec" id="skillsec">
         <div class="container heading text-center">
-            <h1 class="text-center startingfontheading">Skills</h1>
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #bec4ca">
+                    Skills
+                </h1>
+                <h1 class="position-absolute">Skills</h1>
+            </div>
+            <!-- <h1 class="text-center startingfontheading">Skills</h1> -->
             <p class="text-capitalize pt-1">Where there is a will, there is a skill. ✌</p>
         </div>
         <div class="container">
@@ -319,7 +336,13 @@
 
     <section class="projectsec" id="projectsec">
         <div class="container heading text-center">
-            <h1 class="text-center startingfontheading">Project</h1>
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #bec4ca">
+                    Project
+                </h1>
+                <h1 class="position-absolute">Project</h1>
+            </div>
+            <!-- <h1 class="text-center startingfontheading">Project</h1> -->
             <p class="text-capitalize pt-1">The project was more or less a success. 💯</p>
         </div>
         <div class="container">
@@ -414,8 +437,14 @@
 
 
     <section class="contactsec" id="contactsec">   
-        <div class="container heading text-center ">
-            <h1 class="text-center startingfontheading">Contact Us</h1>
+        <div class="container heading text-center">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #bec4ca">
+                    Contact
+                </h1>
+                <h1 class="position-absolute">Contact</h1>
+            </div>
+            <!-- <h1 class="text-center startingfontheading">Contact Us</h1> -->
             <p class="text-capitalize pt-1">We're here to help you and answer any question. We look forward to having question from you.😊</p>
         </div>
         <div class="container">
@@ -640,10 +669,22 @@
 
 })
 
+    // ****** Typing Text js******
+
+    var typed = new Typed(".animate",{
+        strings: [
+            "Developer",
+            "Freelancer",
+            "Designer",
+            "Innovator",
+        ],
+        typeSpeed: 60,
+        backSpeed: 60,
+        loop: true
+    });
     </script>
 
     <!-- /container --> 
-
 <script src='js/jquery-ui.min.js'></script> 
 <script src="js/jquery.appear.min.js"></script> 
 <script src="js/jquery.countTo.min.js"></script> 
