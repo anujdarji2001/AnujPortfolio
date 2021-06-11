@@ -147,6 +147,7 @@ p{
     margin-left: 2rem;
 }
 
+
 /* .wrapper {
     display: inline-flex;
 } */
@@ -282,11 +283,15 @@ p{
       margin-bottom: 2rem;
   }
 
+  .below-img-buttons {
+      margin-top: 1.5rem;
+  }
+
   .below-img-buttons a{
     
     border: 1px solid #55ACEE;
     border-radius: 100px;
-    margin: 0 5px;
+    margin: 10px 5px;
     padding: 12px 35px;
     outline: none;
     color: #55ACEE;
@@ -342,58 +347,123 @@ font-weight: 400;
     text-decoration: none;   
 }
 
+.about_left {
+    margin-top: 4rem;
+}
+
+.about_right {
+    margin-top: 4rem;
+}
+
 .education {
-    margin-top: 2rem;
-    padding: 1rem;
+    border-left: 5px solid #79787e;
+    padding: 0 1.5rem;
+    margin-top: 4rem;
 }
 
-.yearofcal {
-    font-size: 1.5rem;
+.education .timelineproject {
+    transition: all 0.55s;
 }
 
-.education .timelinescollection {
-    border: 3px solid #d4d4e3;
-    overflow:hidden;
-    border-radius:10px;
-    margin-top: 2rem;
+.education .timelineproject .fa-calendar {
+    margin-top: -1rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
-.about_left .education .timeline, .about_right .education .timeline{
-    background-color:#fdf9ff;
-    padding:15px 5px;
-    width:100%;
-    position:relative;
+.education .timelineproject .Sctitle{
+    margin-bottom: 1rem;
+    transition: all 0.55s;
+    font-size: 2.5rem;
+    color: #55ACEE;
+    font-weight: 600;
 }
 
-.about_left .education .timeline .timeline-item, .about_right .education .timeline .timeline-item{
-	position:relative;
-	padding-left:37px;
-	padding-bottom:50px;
+.education .timelineproject .yearofcal {
+    font-size: 2rem;
+}
+
+.education .timelineproject .timeline-title {
+    color: #000;
+    font-size: 2rem;
 }
 
 
-.about_left .education .timeline .timeline-title, .about_right .education .timeline .timeline-title{
-	font-weight:700;
-    font-size:1.8rem;
-    margin-bottom:5px;
-    text-transform:capitalize;
-    color:#55ACEE;
-}
 
-.about_left .education .timeline .timeline-text, .about_right .education .timeline .timeline-text{
-	font-size:1.6rem;
-	line-height:25px;
-	color:#504e70;
-    margin-left: 1rem;   
+.education .timelineproject .timeline-text {
+    margin-bottom: 3rem;
     text-align: justify;
-    margin-right: 1rem;
 }
 
-.education .timelinescollection:hover {
-    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
-    transform: translateY(-15px);
-    border: 1px solid #000;
+ .education .circle-dot{
+	position:absolute;
+	height:25px;
+	width:25px;
+	left: 0.5rem;
+	border-radius:50%;
+	background: #3e3d42;
 }
+
+.timelineproject:hover .Sctitle {
+	font-size: 3.2rem;
+}
+.timelineproject:hover .circle-dot {
+	background: #56cefa;
+	border: 4px solid #3e3d42;
+}
+
+.timelinescollectionproject {
+    border-left: 5px solid #79787e;
+    padding: 0 1.5rem;
+    margin-top: 4rem;
+}
+
+.timelinescollectionproject .timelineproject {
+    transition: all 0.55s;
+}
+
+.timelinescollectionproject .timelineproject .fa-calendar {
+    margin-top: -1rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.timelinescollectionproject .timelineproject .interntitle {
+    margin-bottom: 1rem;
+    transition: all 0.55s;
+    font-size: 2.5rem;
+    color: #55ACEE;
+    font-weight: 600;
+}
+
+.timelinescollectionproject .timelineproject .yearofcal {
+    font-size: 2rem;
+}
+
+.timelinescollectionproject .timelineproject .timeline-title {
+    color: #000;
+    font-size: 2rem;
+}
+
+
+.timelinescollectionproject .timelineproject .timeline-text {
+    margin-bottom: 3rem;
+    text-align: justify;
+}
+
+ .timelinescollectionproject .circle-dot{
+	position:absolute;
+	height:25px;
+	width:25px;
+    left: 0.5rem;
+	border-radius:50%;
+    background: #3e3d42;
+}
+
+.timelineproject:hover .interntitle {
+	font-size: 3.2rem;
+}
+
 
 .skillsec {
     width: 100%;
@@ -528,88 +598,33 @@ font-weight: 400;
     position: relative;
 }
 
-.timelinescollectionproject {
-    border-left: 5px solid #79787e;
-    padding: 0 1.5rem;
-    margin-top: 4rem;
-    border-right: 3px solid #d4d4e3;
-}
-
-.timelinescollectionproject .timelineproject {
-    transition: all 0.55s;
-}
-
-.timelinescollectionproject .timelineproject .fa-calendar {
-    margin-top: -1rem;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.timelinescollectionproject .timelineproject .interntitle {
-    margin-bottom: 1rem;
-    transition: all 0.55s;
-    font-size: 2.5rem;
-    color: #55ACEE;
-    font-weight: 600;
-}
-
-.timelinescollectionproject .timelineproject .yearofcal {
-    font-size: 2rem;
-}
-
-.timelinescollectionproject .timelineproject .timeline-title {
-    color: #000;
-    font-size: 2rem;
-}
-
-.timelinescollectionproject .timelineproject .timeline-text {
-    margin-bottom: 3rem;
-}
-
- .timelinescollectionproject .circle-dot{
-	position:absolute;
-	height:25px;
-	width:25px;
-    left: 0.5rem;
-	border-radius:50%;
-    background: #3e3d42;
-}
-
-.timelineproject:hover .interntitle {
-	font-size: 3.2rem;
-}
-.timelineproject:hover .circle-dot {
-	background: #56cefa;
-	border: 4px solid #3e3d42;
-}
 
 .accimgleft .portfolio-item, .accimgright .portfolio-item{
 	
 	max-width:100%;
-    margin-top: 9rem;
-    margin-left: 3rem;
+    margin-top: 4rem;
+    margin-left: 7rem;
 }
 
 .accimgleft .portfolio-item-inner, .accimgright .portfolio-item-inner{
-	border:4px solid #000;
-	border-radius:10px;
-	overflow:hidden;
 	cursor:pointer;
 	position:relative;
 }
 
-
 .accimgleft .portfolio-item-inner .portfolio-img img, .accimgright .portfolio-item-inner .portfolio-img img{
-           width:100%;
-
+           width:80%;
+           border:4px solid #000;
+           border-radius:10px;
+	       overflow:hidden;
 }
+
 .accimgleft .portfolio-item .portfolio-info, .accimgright .portfolio-item .portfolio-info{
 	position:absolute;
 	left:0;
 	top:0;
 	background-color:rgba(0,0,0,0.8);
 	height:100%;
-	width:100%;
+	width:80%;
 	/* z-index:1; */
 	padding:30px;
 	-webkit-transition:all 0.3s ease;
@@ -619,14 +634,15 @@ font-weight: 400;
 
 .accimgleft .portfolio-item-inner:hover .portfolio-info, .accimgright .portfolio-item-inner:hover .portfolio-info{
             opacity:1;
-            border:4px solid #55ACEE;
+            border:6px solid #55ACEE;
+            border-radius:10px;
 }
 
 
 
 .accimgleft .portfolio-item .portfolio-info h4, .accimgright .portfolio-item .portfolio-info h4{
-	font-size:18px;
-	font-weight:700;
+	font-size:25px;
+	font-weight:500;
 	color:#fff;
 	text-transform:capitalize;
 	transition:all 0.3s ease;
@@ -639,8 +655,8 @@ font-weight: 400;
 
 }
 .accimgleft .portfolio-item .portfolio-info .icon, .accimgright .portfolio-item .portfolio-info .icon{
-	height:38px;
-	width:38px;
+	height:45px;
+	width:45px;
 	background-color:#ffffff;
 	text-align:center;
 	border-radius:50%;
@@ -659,7 +675,7 @@ font-weight: 400;
 
 .accimgleft .portfolio-item .portfolio-info .icon .fa, .accimgright .portfolio-item .portfolio-info .icon .fa{
 
-	line-height:20px;
+	line-height:28px;
     border: none;
 }
 
