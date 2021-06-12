@@ -615,6 +615,7 @@ font-weight: 400;
            border:4px solid #000;
            border-radius:10px;
 	       overflow:hidden;
+           margin-left: 4rem;
 }
 
 .accimgleft .portfolio-item .portfolio-info, .accimgright .portfolio-item .portfolio-info{
@@ -629,6 +630,7 @@ font-weight: 400;
 	-webkit-transition:all 0.3s ease;
 	transition:all 0.3s ease;
 	opacity:0;
+    margin-left: 4rem;
 }
 
 .accimgleft .portfolio-item-inner:hover .portfolio-info, .accimgright .portfolio-item-inner:hover .portfolio-info{
@@ -1086,7 +1088,7 @@ input::placeholder {
 	
         max-width:100%;
         margin-top: 6rem;
-        margin-right: 2rem;
+        margin-left: 2.5rem;
     }
 
     .nav-item a:hover {
