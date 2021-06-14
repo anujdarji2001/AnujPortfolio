@@ -1074,14 +1074,13 @@ input::placeholder {
         height: 10.2rem;
     }
 
-    .timelinescollectionproject .circle-dot{
-        height:20px;
-        width:20px;
-        left: 0.8rem;
-    }
+    .timelinescollectionproject .circle-dot, .education .circle-dot{
+        margin-left: 0.5rem;
+    } 
 
-    .timelinescollectionproject {
+    .timelinescollectionproject, .education {
         border-right: none;
+        margin-left: 0.5rem;
     }
 
     .accimgleft .portfolio-item, .accimgright .portfolio-item{
