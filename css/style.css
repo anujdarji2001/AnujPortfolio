@@ -81,11 +81,28 @@ p{
     color: #000!important;
     font-weight: 500;
     font-size: 2rem;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-item a::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-bottom: 3px solid #000;
+    transition: all 0.4s linear;
+}
+
+.nav-item a:hover::before {
+    width: 100%;
+    
 }
 
 .nav-item a:hover {
     color: #fff!important;
-    border-bottom: 3px solid #000;
 }
 
 .navheader{
