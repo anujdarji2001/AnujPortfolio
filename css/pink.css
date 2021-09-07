@@ -15,16 +15,16 @@ p{
     background: linear-gradient(to right, #d420a7 0%, #d85db9 0%, #610b64 100%);
 }
 
-.header-buttons a:hover {
+/* .header-buttons a:hover {
     color: #ff5ccd;
-}
+} */
 
-.below-img-buttons a {
+.below-img-buttons .btn {
     border: 1px solid #ff5ccd;
     color: #ff5ccd;
 }
 
-.below-img-buttons a:hover{
+.below-img-buttons .btn span, .skill-per{
     background: #ff5ccd;
 }
 
@@ -36,20 +36,27 @@ p{
     color: #ff5ccd;
 }
 
-.carousel-indicators li {
-    background-color: #ff5ccd!important;
+.service .service-item:hover {
+    box-shadow: inset 800px 0 0 0 #ff5ccd;
 }
 
-.skill_right .extraskils .slideritem .boxheading{
+.service .service-icon {
+    border: 1px solid #ff5ccd;
+}
+
+.service .service-icon i {
     color: #ff5ccd;
+}
+.service .service-text::before{
+    background: #ff5ccd;
 }
 
 .fa-calculator, .fa-code, .fa-font {
     color: #ff5ccd;
 }
 
-.form-button button {
-    background-color: #ffcff1;
+.form-button .btn span{
+    background: #ffcff1;
 }
 
 .footersection {

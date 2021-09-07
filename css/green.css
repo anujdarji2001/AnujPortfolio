@@ -1,6 +1,6 @@
 .header {
  
-    background-image: linear-gradient(rgba(90, 207, 108, 0.5),rgba(81, 199, 99, 0.5)), url('../img/img4.jpg');
+    background-image: linear-gradient(rgba(90, 207, 108, 0.4),rgba(81, 199, 99, 0.4)), url('../img/img4.jpg');
 }
 
 p{
@@ -15,16 +15,12 @@ p{
     background: linear-gradient(to right, #0d8a41 0%, #18d17b 0%, #379418 100%);
 }
 
-.header-buttons a:hover {
-    color: #18d17b;
-}
-
-.below-img-buttons a {
+.below-img-buttons .btn {
     border: 1px solid #18d17b;
     color: #18d17b;
 }
 
-.below-img-buttons a:hover{
+.below-img-buttons .btn span, .skill-per{
     background: #18d17b;
 }
 
@@ -36,30 +32,41 @@ p{
     color: #18d17b;
 }
 
-.carousel-indicators li {
-    background-color: #18d17b!important;
+.service .service-item:hover {
+    box-shadow: inset 800px 0 0 0 #18d17b;
 }
 
-.skill_right .extraskils .slideritem .boxheading{
+.service .service-icon {
+    border: 1px solid #18d17b;
+}
+
+.service .service-icon i {
     color: #18d17b;
+}
+
+.service .service-text::before{
+    background: #18d17b;
 }
 
 .fa-calculator, .fa-code, .fa-font {
     color: #18d17b;
 }
 
-.form-button button {
-    background-color: #80e2a9;
-}
-
-.footersection {
-    background: #80e2a9;
-}
-
-.value {
+.form-button .btn span{
     background: #18d17b;
 }
 
+.single-cta i{
+    color:#18d17b;
+  }
+
+  .footer-widget-heading h3::before{
+    background:#18d17b;
+  }
+
+  .footer-widget ul li a:hover{
+    color:#18d17b;
+  }
 @media(max-width: 768px) {
     .header {
         background-image: linear-gradient(rgba(140, 255, 158, 0.5),rgba(140, 255, 158, 0.5)), url('../img/img5.jpg');

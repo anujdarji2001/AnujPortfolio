@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/AD5.jpg" type="image/png">
+
     <title>Anuj Darji</title>
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="	https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/ad.jpg" type="image/png">
 
-    <link rel="stylesheet" class="alternate-style" title="pink" href="css/pink.css" type="text/css" disabled>
+    <!-- <link rel="stylesheet" class="alternate-style" title="pink" href="css/pink.css" type="text/css" disabled> -->
     <link rel="stylesheet" class="alternate-style" title="orange" href="css/orange.css" type="text/css" disabled>
-    <link rel="stylesheet" class="alternate-style" title="red" href="css/red.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="purple" href="css/purple.css" type="text/css" disabled>
     <link rel="stylesheet" class="alternate-style" title="green" href="css/green.css" type="text/css" disabled>
 
-    <script src="typed.js-master/lib/typed.js"></script>
+    <script src="https://s3.amazonaws.com/myadvobuck/static/libs/typed.min.js"></script>
+    
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -31,10 +38,10 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js'></script>
 
 </head>
 <body onload="loadingFunc()">
-
     
     <div id="preloader"></div>
 
@@ -58,7 +65,7 @@
                         <a class="nav-link" href="#skillsec">Skill</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="#projectsec">Accomplishment</a>
+                        <a class="nav-link" href="#projectsec">Project</a>
                         </li>
                     <li class="nav-item px-2">
                         <a class="nav-link" href="#contactsec">Contact</a>
@@ -69,17 +76,6 @@
           </nav>
           <section class="header-section">
               <div class="center-div">
-                <!-- <div class="Wrapper">
-                    <span class="static_text">I'm</span>
-                    <div>
-                        <ul class="dynamic_text">
-                            <li><span>Innovator</span></li>
-                            <li><span> Designer</span></li>
-                            <li><span>Freelancer</span></li>
-                            <li><span>Developer</span></li>
-                        </ul>
-                    </div>
-                </div> -->
 
                 <div class="wrapper">
                     <span class="dyanmic_text">I'm <span id="animate"></span></span> 
@@ -87,16 +83,18 @@
 
                   <p>Life is learning and I'm Learner</p>
                   <div class="header-buttons">
-                      <a href="#aboutsec">AboutMe</a>
-                      <a href="#contactsec">ContactUs</a>
+                      <a class="btn" href="#aboutsec"><span></span>About Me</a>
+                      <a class="btn" href="#contactsec"><span></span>Contact Us</a>
                   </div>
-                  <div class="socialicons">
-                    <a href="https://www.facebook.com/anuj.darji.58/" class="fa fa-facebook"></a>
-                    <a href="https://www.instagram.com/_.anuj_darji._/" class="fa fa-instagram"></a>
-                    <a href="https://github.com/anujdarji2001" class="fa fa-github"></a>
-                    <a href="https://mobile.twitter.com/anuj_darji2001" class="fa fa-twitter"></a>
-                    <a href="https://www.linkedin.com/in/anuj-darji-6727b01b0/" class="fa fa-linkedin"></a>
-                    
+
+                <div class="socialicons">
+                    <div class="links">
+                        <a href="https://www.facebook.com/anuj.darji.58/" aria-hidden="true" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/_.anuj_darji._/" aria-hidden="true" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://github.com/anujdarji2001" aria-hidden="true" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://mobile.twitter.com/anuj_darji2001" aria-hidden="true" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/anuj-darji-6727b01b0/" aria-hidden="true" target="_blank"><i class="fa fa-linkedin" ></i></a>
+                 </div>
                 </div>
 
               </div>
@@ -106,26 +104,25 @@
     <!--**********Home Ends************-->
 
     <section class="aboutsec" id="aboutsec">
-        <div class="container heading text-center">
+        <div class="container heading text-center" data-aos="zoom-in">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #bec4ca">
                     About
                 </h1>
                 <h1 class="position-absolute">About Me</h1>
             </div>
-            <!-- <h1 class="text-center startingfontheading">About Me</h1> -->
             <p class="text-capitalize pt-1">Thinker, Analyzer, Spiriter.</p>
         </div>
         <div class="container">
             <div class="row">
                 <!--Left Side-->
                 <div class="col-lg-6 col-md-6 col-12 main_left text-center">
-                    <div class="imgdiv">
+                    <div class="imgdiv" data-aos="fade-right">
                         <img src="img/ad1.JPG" class="imgsec">
                     </div>
                     <div class="below-img-buttons">
-                        <a href="Anuj.pdf">Open CV</a>
-                        <a href="#contactsec">Hire Me</a>
+                        <a class="btn" href="Anuj.pdf" target="_blank"><span></span> Open CV</a>
+                        <a class="btn" href="#contactsec"><span></span> Hire Me</a>
                     </div>
                 </div>
                 <!--Right Side-->
@@ -171,7 +168,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container" data-aos="zoom-in">
             <div class="row">
                 <!--Left Side-->
 
@@ -218,25 +215,36 @@
                     <div class="timelinescollectionproject">
                         <div class="timelineproject">    
                             <div class="circle-dot"></div>
-                            <i class="fa fa-calendar"></i><span class="yearofcal">2019</span><br>
+                            <i class="fa fa-calendar"></i><span class="yearofcal">Dec - 2019</span><br>
                             <p class="interntitle">Web Design Internship</p>
                             <a href="https://www.silverwingtechnologies.com/" target="_blank" style="text-decoration:none; text-decoration-color: none;"><h4 class="timeline-title">Silverwing Technologies PVT. LTD.</h4></a>
+                            <ul class="experdata">
+                                <li class="data">Comprehensive knowledge of  HTML5, CSS3, Bootstrap and JavaScript</li> 
+                                <li>Created Some Quality WebPages.</li> 
+                                <li>Gained good experience as a Frontend Developer</li> 
+                            </ul>
+                            <br>
                             <p class="timeline-text">
-                                Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development rather than software development.<br><br>
-                                <a href="https://anujdarji2001.github.io/PortfolioAD/">https://anujdarji2001.github.io/PortfolioAD/</a>
+                                <a class="link" href="https://drive.google.com/file/d/1doeGhu7Ey5beplNzpFIsAa-aaEaNF1B6/view" target="_blank">https://drive.google.com/file/d/1doeGhu7Ey5beplNzpFIsAa-aaEaNF1B6/view</a>
                             </p>
                             
                         </div>
                         
                         <div class="timelineproject">
                             <div class="circle-dot"></div>
-                            <i class="fa fa-calendar"></i><span class="yearofcal">2021</span>
+                            <i class="fa fa-calendar"></i><span class="yearofcal">May 2021 - June 2021</span>
                             <p class="interntitle">Python Internship</p>
                             <a href="https://www.silverwingtechnologies.com/" target="_blank" style="text-decoration:none; text-decoration-color: none;"><h4 class="timeline-title">Silverwing Technologies PVT. LTD.</h4></a>
-                            <p class="timeline-text">
-                                A python developer is responsible for writing server-side application logic. There is an alarming rate of jobs created every day for a python developer.<br><br>
-                                <a href="https://github.com/anujdarji2001/SW_Internship">https://github.com/anujdarji2001/SW_Internship</a>
-                            </p>
+                            
+                                <ul class="experdata">
+                                    <li class="data">Contributed to the development of an Ecommerce Website using Django Framework</li> 
+                                    <li>Got working experience on GIT </li> 
+                                    <li>Gained good experience as a Python Backend Developer</li> 
+                                </ul>
+                                <br>
+                                <p class="timeline-text">
+                                    <a href="https://drive.google.com/file/d/1p9Tv3y8pTsxjIQlxd3bnzQxjQZyO023Y/view?usp=sharing" target="_blank">https://drive.google.com/file/d/1p9Tv3y8pTsxjIQlxd3bnzQxjQZyO023Y/view</a>
+                                </p>
                         </div>
                     </div>
                 </div>
@@ -247,91 +255,108 @@
 
     <!--******** About Ends ******* -->
     <section class="skillsec" id="skillsec">
-        <div class="container heading text-center">
+        <div class="container heading text-center" data-aos="zoom-in">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #bec4ca">
                     Skills
                 </h1>
                 <h1 class="position-absolute">Skills</h1>
             </div>
-            <!-- <h1 class="text-center startingfontheading">Skills</h1> -->
             <p class="text-capitalize pt-1">Where there is a will, there is a skill. ✌</p>
         </div>
         <div class="container">
             <div class="row">
                 <!--Left Side-->
-                <div class="col-lg-6 col-md-6 col-12 skill_left">
-                    <h1><i class="fa fa-line-chart"></i>Language Skill</h1>
+                <div class="col-lg-6 col-md-6 col-12 skill_left" data-aos="zoom-in">
                     <div class="codingskill">
                         <div class="row">
                             <div class="col-lg-10">
-                              <section id="skills" class="pad200">
-                                <ul class="bar">
-                                  <li>
-                                    <p>Web Developement</p>
-                                    <div class="bar-wrap"><span data-width="80"><strong class="value">80</strong><b>%</b></span></div>
-                                  </li>
-                                  <li>
-                                    <p>Python</p>
-                                    <div class="bar-wrap"><span data-width="60"><strong class="value">60</strong><b>%</b></span></div>
-                                  </li>
-                                  <li>
-                                    <p>Java</p>
-                                    <div class="bar-wrap"><span data-width="75"><strong class="value">75</strong><b>%</b></span></div>
-                                  </li>
-                                  <li>
-                                    <p>C/C++</p>
-                                    <div class="bar-wrap"><span data-width="90"><strong class="value">90</strong><b>%</b></span></div>
-                                  </li>
-                                  <li>
-                                    <p>Android</p>
-                                    <div class="bar-wrap"><span data-width="30"><strong class="value">30</strong><b>%</b></span></div>
-                                  </li>
-                                </ul>
-                              </section>
+                                <div class="skills">
+                                    <div class="skill">
+                                      <div class="skill-name"><img src="https://img.icons8.com/color/48/000000/html-5--v1.png"/>/<img src="https://img.icons8.com/color/48/000000/css3.png"/></div>
+                                      <div class="skill-bar">
+                                        <div class="skill-per" per="95"></div>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="skill">
+                                        <div class="skill-name"><img src="https://img.icons8.com/color/48/000000/javascript.png"/>/ <img src="./img/jquerylogo.jpg" width="38px"></div>
+                                        <div class="skill-bar">
+                                          <div class="skill-per" per="65"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill">
+                                      <div class="skill-name"><img src="./img/nodejs.png" width="65px"/></div>
+                                      <div class="skill-bar">
+                                        <div class="skill-per" per="70"></div>
+                                      </div>
+                                    </div>
+                              
+                                    <div class="skill">
+                                      <div class="skill-name"><img src="./img/react-logo.png" width="55px"/></div>
+                                      <div class="skill-bar">
+                                        <div class="skill-per" per="60"></div>
+                                      </div>
+                                    </div>
+
+                                    <div class="skill">
+                                        <div class="skill-name"><img src="https://img.icons8.com/color/48/000000/python--v1.png"/></div>
+                                        <div class="skill-bar">
+                                          <div class="skill-per" per="75"></div>
+                                        </div>
+                                    </div>
+
+                                  </div>
                             </div>
                           </div>    
                     </div>
                 </div>
-                <!--Right Side-->
-                <div class="col-lg-6 col-md-6 col-12 skill_right">
-                    <h1><i class="fa fa-bar-chart"></i>Extra Skills</h1>
-                    <div class="extraskils">
-                        <div id="demo" class="carousel slide" data-ride="carousel">
-
-                            <!-- Indicators -->
-                            <ul class="carousel-indicators">
-                            <li data-target="#demo" data-slide-to="0" class="active"></li>
-                            <li data-target="#demo" data-slide-to="1"></li>
-                            <li data-target="#demo" data-slide-to="2"></li>
-                            </ul>
-                        
-                            <!-- The slideshow -->
-                            <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="slideritem">
-                                    <a href="https://en.wikipedia.org/wiki/Competitive_programming#:~:text=should%20be%20removed.%20(-,February%202018)%20(Learn%20how%20and%20when%20to%20remove%20this%20template,mathematical%20or%20logical%20in%20nature." target="_blank" style="text-decoration: none; text-decoration-color: none;"><div class="icon"><i class="fa fa-code"></i></div></a>
-                                    <a href="https://en.wikipedia.org/wiki/Competitive_programming#:~:text=should%20be%20removed.%20(-,February%202018)%20(Learn%20how%20and%20when%20to%20remove%20this%20template,mathematical%20or%20logical%20in%20nature." target="_blank" style="text-decoration: none; text-decoration-color: none;"><h3 class="boxheading">Competitive Programming</h3>
-                                    <p class="slideritempara">The aim of competitive programming is to write source code of computer programs which are able to solve given problems. A vast majority of problems appearing in programming contests are mathematical or logical in nature.</p></a>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="slideritem">
-                                    <a href="https://en.wikipedia.org/wiki/Mathematics" target="_blank"><div class="icon"><i class="fa fa-calculator"></i></div></a>
-                                    <a href="https://en.wikipedia.org/wiki/Mathematics" target="_blank" style="text-decoration: none; text-decoration-color: none;"><h3 class="boxheading">Mathematics</h3>
-                                    <p class="slideritempara">Mathematics has no generally accepted definition.Aristotle defined mathematics as "the science of quantity". A great many professional mathematicians take no interest in a definition of mathematics,  or consider it undefinable</p></a>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="slideritem">
-                                    <a href="https://www.deccanherald.com/content/249714/importance-english-employment.html" target="_blank" style="text-decoration: none; text-decoration-color: none;"><div class="icon"><i class="fa fa-font"></i></div></a>
-                                    <a href="https://www.deccanherald.com/content/249714/importance-english-employment.html" target="_blank" style="text-decoration: none; text-decoration-color: none;"><h3 class="boxheading">English Proficiency</h3>
-                                    <p class="slideritempara">English is the language which connects people from different regions, cultures and nations. English being the most commonly used language in world; the knowledge of English is one of the most important employability skills.</p></a>
-                                </div>
-                            </div>
+            <!--Right Side-->
+            <div class="col-lg-6 col-md-6 col-12 skill_right">
+                <div class="extraskils">
+                    <div class="service" id="service">
+                        <div class="container">
+                            <div class="row">
+                                    <div class="service-item" data-aos="zoom-in" data-aos-delay="0">
+                                        <div class="service-icon">
+                                            <i class="fa fa-laptop"></i>
+                                        </div>
+                                        <div class="service-text">
+                                            <h3>Web Design</h3>
+                                            <p>
+                                              You must be have Patience because of a website is never fully complete and curiosity of learning new things.
+                                            </p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="service-item" data-aos="zoom-in" data-aos-delay="400">
+                                        <div class="service-icon">
+                                          <i class="fa fa-lightbulb"></i>
+                                        </div>
+                                        <div class="service-text">
+                                            <h3>Web Idea</h3>
+                                            <p>
+                                              Web project ideas will get you going with all the practicalities you need to succeed in your career as a web developer.
+                                            </p>
+                                        </div>
+                                    </div>
+                                
+                                
+                                    <div class="service-item" data-aos="zoom-in" data-aos-delay="600">
+                                        <div class="service-icon">
+                                            <i class="fa fa-code"></i>
+                                        </div>
+                                        <div class="service-text">
+                                            <h3>Competitve Coding</h3>
+                                            <p>
+                                              Coding isn’t a formula that can be learned, but an art that comes with practice.The more you practice, the better you become.
+                                            </p>
+                                        </div>
+                                    </div>
                             </div>
                         </div>
-                   </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -342,107 +367,124 @@
 
 
     <section class="projectsec" id="projectsec">
-        <div class="container heading text-center">
+        <div class="container heading text-center" data-aos="zoom-in">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #bec4ca">
-                    Accomplishments
+                    Project
                 </h1>
-                <h1 class="position-absolute">Accomplishments</h1>
+                <h1 class="position-absolute">Project</h1>
             </div>
-            <!-- <h1 class="text-center startingfontheading">Project</h1> -->
-            <p class="text-capitalize pt-1">Every accomplishment starts with the decision to try. 💯</p>
+            <p class="text-capitalize pt-1">The project was more or less a success. 💯</p>
         </div>
-        <div class="container">
-            
-                <!-- <h1><i class="fa fa-briefcase"></i>Accomplishments </h1> -->
-                <div class="row">
-                    <!-- left side -->
-                    <div class="col-lg-6 col-md-6 col-12 accimgleft">
-                        <div class="portfolio-item">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="img/Sw_webdesign_intern.jpg" alt="portfolio">
-                                </div>
-                                <div class="portfolio-info">
-                                    <h4>Web Design:</h4>
-                                    <div class="icon">
-                                        <i class="fa fa-search"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- right side -->
-                    <div class="col-lg-6 col-md-6 col-12 accimgright">
-                        <div class="portfolio-item">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="img/python.jpg" alt="portfolio">
-                                </div>
-                                <div class="portfolio-info">
-                                    <h4>Python:</h4>
-                                    <div class="icon">
-                                        <i class="fa fa-search"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    
+        <div class="projectdiv"> 
+            <div class="card" data-aos="zoom-in" data-aos-delay="0">
+                <figure class="snip1104 blue">
+                    <img src="./img/sparkcart.png" alt="sample33" />
+                    <figcaption>
+                    <h2>Spark<span>Cart</span></h2>
+                    </figcaption>
+                    <a href="https://sparkcart.herokuapp.com/" target="_blank"></a>
+                </figure>
+                <div class="card-body">
+                    <p class="card-title2">Python Django Project</p>
+                    <p class="card-text">Created an E-commerce webapp using django framework. The complete <b>login authentication</b> by using email verification. It can also login through <b>google/facebook</b>. After sucessful login you can order anything and you can also see tracking of your order.</p>
                 </div>
             </div>
-            </div>
-        </div>
 
-        <div class="lightbox">
-            <div class="lightbox-content">
-            <div class="lightbox-close">&times;</div>
-                <img src="img/Sw_webdesign_intern.jpg" class="lightbox-img" onclick="nextItem()">
-                <div class="lightbox-caption">
-                    <div class="caption-text"></div>
-                    <div class="caption-counter"></div>
-                </div>
+            <div class="card" data-aos="zoom-in" data-aos-delay="500">
+              <figure class="snip1104 red">
+                  <img src="./img/avpizzeria.png" alt="sample34" />
+                <figcaption>
+                  <h2>AV<span> Pizzeria</span></h2>
+                </figcaption>
+                <a href="https://av-pizzeria.herokuapp.com/" target="_blank"></a>
+              </figure>
+              <div class="card-body">
+                <p class="card-title2">MERN Stack Project</p>
+                <p class="card-text">Created a MERN website. It's created using Node.js and MongoDB. Amazing website for pizza company. Various types of pizza & bevrages are fetched dynamically. After order of pizzas it consist the live tracking using <span class="socket">socket.io</span></p>
+              </div>
             </div>
-            <div class="lightbox-controls">
-                <div class="prev-item" onclick="prevItem()"><i class="fa fa-angle-left"></i></div>
-                <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
+
+            <div class="card" data-aos="zoom-in" data-aos-delay="1000">
+              <figure class="snip1104">
+                  <img src="./img/movieshub.png" alt="sample35" />
+                <figcaption>
+                  <h2>Movies<span>Hub</span></h2>
+                </figcaption>
+                <a href="https://reactmovieappp.herokuapp.com/" target="_blank"></a>
+              </figure>
+              <div class="card-body">
+                <p class="card-title2">ReactJS Project</p>
+                <p class="card-text">Created a simple Movies Searching website using public API to fetch the details of movies. In this project we used <span class="socket"> Material Ui </span> for frontend design. Here we fetch some amount of details like title, cast, trailer link etc. It consist direct link of youtube trailer.</p>
+              </div>
             </div>
-        
+
+            <div class="card" data-aos="zoom-in" data-aos-delay="0">
+              <figure class="snip1104 red">
+                  <img src="./img/edutekbiz.png" alt="sample34" />
+                <figcaption>
+                  <h2>Edu<span>TekBiz</span></h2>
+                </figcaption>
+                <a href="http://edutekbiz.herokuapp.com/" target="_blank"></a>
+              </figure>
+              <div class="card-body">
+                <p class="card-title2">Python Django Project</p>
+                <p class="card-text">It's created using Django. It's consist complete login authentication with email verify. It's consist <b>CRUD operation</b> in Notes, Homework, To-do list. In this project we fetch different <b>API's </b>of Youtube, Dictionary, Books, Wikipedia, Translator.</p>
+              </div>
+            </div>
+
+            <div class="card" data-aos="zoom-in" data-aos-delay="500">
+              <figure class="snip1104">
+                  <img src="./img/triptip.png" alt="sample35" />
+                <figcaption>
+                  <h2>Trip<span>Tip</span></h2>
+                </figcaption>
+                <a href="https://triptip.netlify.app/" target="_blank"></a>
+              </figure>
+              <div class="card-body">
+                <p class="card-title2">ReactJS Project</p>
+                <p class="card-text">Created a simple Restaurant/Hotels/Attraction Showing website of around your location directly. It can also shows from different locations on map. It also consist <b>autocomplete search</b> using React Component. In this project we used <span class="socket"> Material Ui </span> for frontend design. Here we fetch different details using RAPID API.</p>
+              </div>
+            </div>
+            
         </div>
+        
+        
     </section>
 
-    <!-- ************* Accomplishment Ends ************-->
+    <!-- ************* Project Ends ************-->
 
 
     <section class="contactsec" id="contactsec">   
-        <div class="container heading text-center">
+        <div class="container heading text-center" data-aos="zoom-in">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #bec4ca">
                     Contact
                 </h1>
                 <h1 class="position-absolute">Contact</h1>
             </div>
-            <!-- <h1 class="text-center startingfontheading">Contact Us</h1> -->
             <p class="text-capitalize pt-1">We're here to help you and answer any question. We look forward to having question from you.😊</p>
         </div>
-        <div class="container">
+        <div class="container" data-aos="zoom-in">
             <div class="contactuspage">
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-12 offset-lg-2 offset-md-2 col-1 formcontact">
                     <form action="responce.html">
                         <div class="form-group">
-                          <input type="text" class="form-control" placeholder="Enter Your Name" required autocomplete="off" id="username">
+                          <input type="text" style="font-size:15px;" class="form-control" placeholder="Enter Your Name" required autocomplete="off" id="username">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Enter Your Email" required autocomplete="off" id="useremail">
+                            <input type="email" style="font-size:15px;" class="form-control" placeholder="Enter Your Email" required autocomplete="off" id="useremail">
                           </div>
                           <div class="form-group">
-                            <input type="number" class="form-control" placeholder="Enter Contact No." required autocomplete="off" id="usercontact">
+                            <input type="tel" style="font-size:15px;" class="form-control" placeholder="Enter Contact No." pattern="^\d{10}$" required autocomplete="off" id="usercontact">
                           </div>
                           <div class="form-group">
-                            <textarea class="form-control" rows="4" placeholder="Enter Your Message" required autocomplete="off" id="usermsg"></textarea>
+                            <textarea class="form-control" style="font-size:15px;" rows="5" placeholder="Enter Your Message" required autocomplete="off" id="usermsg"></textarea>
                           </div>
                           <div class="d-flex justify-content-center form-button">
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn"><span></span> Submit</button>
                           </div>
                       </form>
                 </div>
@@ -451,67 +493,98 @@
         </div>
     </section>  
     <!--*********** Contact End ***************-->
-    <footer class="footersection" id="footerdiv">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-12 footercontactsec">
-                    <div class="contact-info-item padd-15">
-                        <div class="icon"><i class="fa fa-phone"></i></div>
-                        <h2>Contact me</h2>
-                        <p>+91 96015 81001</p>
-                    </div>
-                </div>
 
-                <div class="col-lg-4 col-md-4 col-12 footercontactsec">
-                    <div class="contact-info-item padd-15">
-                        <div class="icon"><i class="fa fa-map-marker"></i></div>
-                        <h2>Workplace</h2>
-                        <p>L.D. College Of Engineering <br> Ahmedabad,Gujarat-380015</p>
-                        
+            <footer class="footer-section">
+                <div class="container">
+                  <div class="footer-cta py-5">
+                    <div class="row">
+                      <div class="col-sm-4 col-xl-4 mb-30">
+                        <div class="single-cta">
+                          <i class="fa fa-map-marker"></i>
+                          <div class="cta-text">
+                            <h4>Find Me</h4>
+                            <span>Ahmedabad, Gujarat-380019</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 col-xl-4 offset-xl-1 mb-30">
+                        <div class="single-cta">
+                          <i class="fa fa-phone"></i>
+                          <div class="cta-text">
+                            <h4>Call Me</h4>
+                            <span><a href="tel: 9601581001"> +91 9601581001</a></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 col-xl-3 mb-30">
+                        <div class="single-cta">
+                          <i class="fa fa-envelope-open"></i>
+                          <div class="cta-text">
+                            <h4>Mail Me</h4>
+                            <span><a href="mailto:anujdarji2001@gmail.com">anujdarji2001@gmail.com</a></span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                </div>
+                  </div>
+                  <div class="footer-content py-5">
+                    <div class="row">
+                      <div class="col-lg-5">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>About Me</h3>
+                            </div>
+                          
+                          <div class="footer-text mb-5">
+                            <p>An individual with computer Proficinacy, Customer support experience and critical thinking skills. I am extremely inspired and comiitted person with strong interpersonal skills.</p>
+                          </div>
+                          <div class="footer-social-icon">
+                            <div class="footer-widget-heading">
+                                <h3>Follow Me</h3>
+                              </div>
+                            <div class="links">
+                                <a href="https://www.facebook.com/anuj.darji.58/" aria-hidden="true" target="_blank"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/_.anuj_darji._/" aria-hidden="true" target="_blank"><i class="fa fa-instagram"></i></a>
+                                <a href="https://github.com/anujdarji2001" aria-hidden="true" target="_blank"><i class="fa fa-github"></i></a>
+                                <a href="https://mobile.twitter.com/anuj_darji2001" aria-hidden="true" target="_blank"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/anuj-darji-6727b01b0/" aria-hidden="true" target="_blank"><i class="fa fa-linkedin" ></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
-                <div class="col-lg-4 col-md-4 col-12 footercontactsec">
-                    <div class="contact-info-item padd-15">
-                        <div class="icon"><i class="fa fa-envelope"></i></div>
-                        <h2>Email</h2>
-                        <p>anujdarji2001@gmail.com</p>
+                      <div class="col-lg-3 offset-lg-1">
+                        <div class="footer-widget">
+                           <div class="footer-widget-heading">
+                             <h3>Useful Links</h3>
+                           </div>
+                           <ul class="footer-text">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#aboutsec">About</a></li>
+                            <li><a href="#skillsec">Skills</a></li>
+                            <li><a href="#projectsec">Project</a></li>
+                            <li><a href="#contactsec">Contact</a></li>
+                           </ul>
+                        </div>
+                      </div>
+
+                      
+                      <div class="col-lg-2">
+                        <div class="footer-logo">
+                              <a href="#"><img src="img/AD5.jpg" class="img-fluid"></a>
+                          </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </div>
-            <h2 class="text-center my-3">Navigation links</h2>
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-12 text-center">
-                    <ul class="navfoot">
-                        <li class="nav-itemfoot">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-itemfoot">
-                        <a class="nav-link" href="#aboutsec">About</a>
-                        </li>
-                        <li class="nav-itemfoot">
-                            <a class="nav-link" href="#skillsec">Skill</a>
-                        </li>
-                        <li class="nav-itemfoot">
-                            <a class="nav-link" href="#contactsec">Contact</a>
-                        </li>
-                    </ul>
+                <div class="copyright-area">
+                  <div class="container">
+                        <div class="copyright-text text-center">
+                          <p>&copy; Self-Made Mini-Project</p>
+                        </div>
+                  </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-12 text-center">
-                    <div class="socialicons">
-                        <a href="https://www.facebook.com/anuj.darji.58/" class="fa fa-facebook"></a>
-                        <a href="https://www.instagram.com/_.anuj_darji._/" class="fa fa-instagram"></a>
-                        <a href="https://github.com/anujdarji2001" class="fa fa-github"></a>
-                        <a href="https://mobile.twitter.com/anuj_darji2001" class="fa fa-twitter"></a>
-                        <a href="https://www.linkedin.com/in/anuj-darji-6727b01b0/" class="fa fa-linkedin"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright-text text-center my-3">
-               <p> &copy; Self-Made Mini-Project</p>
-            </div>
+              </footer>
 
             <!--*******Footer End*********-->
 
@@ -528,143 +601,23 @@
         </div>
         <h5>Style Switcher</h5>
         <ul>
-            <li><a title="pink" style="background-color:#ff5ccd" onclick="setActiveStyle('pink')"></a></li>
+            <!-- <li><a title="pink" style="background-color:#ff5ccd" onclick="setActiveStyle('pink')"></a></li> -->
             <li><a title="blue" style="background-color:#007bff" onclick="setActiveStyle('blue')"></a></li>
             <li><a title="orange" style="background-color:#ff8c00" onclick="setActiveStyle('orange')"></a></li>
-            <li><a title="yellow" style="background-color:#fe2712" onclick="setActiveStyle('red')"></a></li>
+            <li><a title="purple" style="background-color:#b500fc" onclick="setActiveStyle('purple')"></a></li>
             <li><a title="green" style="background-color:#18d17b" onclick="setActiveStyle('green')"></a></li>		
         </ul>
     </div>
 
     <!--Style-Switcher ends-->
 
-    <script>
-        
-        var preloader = document.getElementById('preloader');
-
-        function loadingFunc(){
-            preloader.style.display = 'none';
-        }
-
-        mybutton = document.getElementById('myBtn');
-        window.onscroll = function() {scrollFunc()};
-        function scrollFunc() {
-            if(document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-                mybutton.style.display= "block";
-            }
-            else{
-                mybutton.style.display= "none";
-            }
-        }
-
-        function topFunction() {
-            document.body.scrollTop=0;
-            document.documentElement.scrollTop=0;
-            }
-        
-        document.querySelector(".toggle-style-switcher").addEventListener("click",()=>{ 
-        document.querySelector(".style-switcher").classList.toggle("open");
-        })
-
-        const links = document.querySelectorAll(".alternate-style");  
-        
-        function setActiveStyle(color) {
-            for(let i=0;i<links.length;i++) {
-                if(color===links[i].getAttribute("title")) {
-                    links[i].removeAttribute("disabled");
-                }
-                else
-                {
-                    links[i].setAttribute("disabled","true");
-                }
-            }
-        }
-
-
-        // script for projectcerti
-
-        const portfolioItems=document.querySelectorAll(".portfolio-item"),
-              totalPortfolioItem= portfolioItems.length;
-
-        const lightbox=document.querySelector(".lightbox"),
-            lightboxImg=lightbox.querySelector(".lightbox-img"),
-            lightboxClose=lightbox.querySelector(".lightbox-close"),
-            lightboxText=lightbox.querySelector(".caption-text"),
-            lightboxCounter=lightbox.querySelector(".caption-counter");
-
-      let itemIndex=0;
-      for(let i=0;i<totalPortfolioItem;i++){
-      	  portfolioItems[i].addEventListener("click",function(){
-                
-                itemIndex=i;
-                changeItem();
-                toggleLightbox();
-
-      	  })
-      }
-
-      function nextItem(){
-      	   if(itemIndex===totalPortfolioItem-1){
-      	   	       itemIndex=0;
-      	   }
-      	   else{
-      	   	itemIndex++;
-      	   }
-      	  changeItem();
-      }
-
-
-        function prevItem(){
-      	   if(itemIndex===0){
-      	   	      itemIndex=totalPortfolioItem-1;
-      	   }
-      	   else{
-      	   	itemIndex--;
-      	   }
-      	  changeItem();
-      }
-
-      function toggleLightbox(){
-      	lightbox.classList.toggle("open");
-      }
-
-      function changeItem(){
-          
-          imgSrc=portfolioItems[itemIndex].querySelector(".portfolio-img img").getAttribute("src");
-          lightboxImg.src=imgSrc;
-
-          lightboxText.innerHTML=portfolioItems[itemIndex].querySelector("h4").innerHTML;
-          lightboxCounter.innerHTML=(itemIndex+1) + " of " + totalPortfolioItem;
-
-      }
-
-      lightbox.addEventListener("click",function(event){
-
-        if(event.target===lightboxClose || event.target===lightbox){
-        toggleLightbox();
-    }
-
-})
-
-    // ****** Typing Text js******
-
-    var typed = new Typed("#animate",{
-        strings: [
-            "Developer",
-            "Freelancer",
-            "Designer",
-            "Innovator"
-        ],
-        typeSpeed: 60,
-        backSpeed: 60,
-        loop: true
-    });
-    </script>
-
-    <!-- /container --> 
-<script src='js/jquery-ui.min.js'></script> 
-<script src="js/jquery.appear.min.js"></script> 
-<script src="js/jquery.countTo.min.js"></script> 
 <script src="js/main.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 1000,
+        });
+    </script>
 </body>
 </html>

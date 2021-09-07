@@ -1,6 +1,6 @@
 .header {
  
-    background-image: linear-gradient(rgba(255,153,51, 0.5),rgba(255,153,51, 0.5)), url('../img/img4.jpg');
+    background-image: linear-gradient(rgba(255,153,51, 0.4),rgba(255,153,51, 0.4)), url('../img/img4.jpg');
 }
 
 p{
@@ -15,16 +15,12 @@ p{
     background: linear-gradient(to right, #ff8c00 0%, #f19e4b 0%, #d8a311 100%);
 }
 
-.header-buttons a:hover {
-    color: #ff8c00;
-}
-
-.below-img-buttons a {
+.below-img-buttons .btn {
     border: 1px solid #ff8c00;
     color: #ff8c00;
 }
 
-.below-img-buttons a:hover{
+.below-img-buttons .btn span, .skill-per{
     background: #ff8c00;
 }
 
@@ -36,33 +32,44 @@ p{
     color: #ff8c00;
 }
 
-.carousel-indicators li {
-    background-color: #ff8c00!important;
+.service .service-item:hover {
+    box-shadow: inset 800px 0 0 0 #ff8c00;
 }
 
-.skill_right .extraskils .slideritem .boxheading{
+.service .service-icon {
+    border: 1px solid #ff8c00;
+}
+
+.service .service-icon i {
     color: #ff8c00;
+}
+
+.service .service-text::before{
+    background: #ff8c00;
 }
 
 .fa-calculator, .fa-code, .fa-font {
     color: #ff8c00;
 }
 
-.form-button button {
-    background-color: #f19e4b;
-}
-
-.footersection {
-    background: #f19e4b;
-}
-
-.value {
+.form-button .btn span{
     background: #ff8c00;
 }
 
+.single-cta i{
+    color:#ff8c00;
+  }
+
+  .footer-widget-heading h3::before{
+    background:#ff8c00;
+  }
+
+  .footer-widget ul li a:hover{
+    color:#ff8c00;
+  }
 @media(max-width: 768px) {
     .header {
-        background-image: linear-gradient(rgba(255,153,51, 0.5),rgba(255,153,51, 0.5)), url('../img/img5.jpg');
+        background-image: linear-gradient(rgba(255,153,51, 0.1),rgba(255,153,51, 0.1)), url('../img/img5.jpg');
     }
     
 }

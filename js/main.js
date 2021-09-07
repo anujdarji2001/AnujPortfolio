@@ -1,24 +1,100 @@
-$(document).ready(function() {
-"use strict";
+   
+    // preloader
+    
+    var preloader = document.getElementById('preloader');
 
-/*============= Counters ===========*/
-var barElements = $('.bar li');
-for (var i = 0; i < barElements.length; i++) {
- $(barElements[i]).appear(function() {
-	  var b = $(this).find("span").attr("data-width");
-	  $(this).find("span").animate({
-		width: b + "%" //The number to stop for the width of the bar.
-	  }, 1700, "easeOutCirc");
-	  $(this).find(".value").countTo({
-		from: 0, //The number to start counting from. (default: 0)
-		to: b, //The number to stop counting at. (default: 100)
-		speed: 1700, // Control speed of animation
-		refreshInterval: 40 //The number of milliseconds to wait between refreshing the counter. (default: 100)
-		});
-	});
-}
+    function loadingFunc(){
+        preloader.style.display = 'none';
+    }
+
+    // top button
+
+    mybutton = document.getElementById('myBtn');
+    window.onscroll = function() {scrollFunc()};
+    function scrollFunc() {
+        if(document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+            mybutton.style.display= "block";
+        }
+        else{
+            mybutton.style.display= "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop=0;
+        document.documentElement.scrollTop=0;
+        }
+
+    
+        //Style Switcher
+    
+    document.querySelector(".toggle-style-switcher").addEventListener("click",()=>{ 
+    document.querySelector(".style-switcher").classList.toggle("open");
+    })
+
+    const links = document.querySelectorAll(".alternate-style");  
+    
+    function setActiveStyle(color) {
+        for(let i=0;i<links.length;i++) {
+            if(color===links[i].getAttribute("title")) {
+                links[i].removeAttribute("disabled");
+            }
+            else
+            {
+                links[i].setAttribute("disabled","true");
+            }
+        }
+    }
 
 
-/*============= Touch Mobile ===========*/
-document.addEventListener("touchstart", function() {},false);
-})();
+        // button
+
+        $(document).ready(function(e){
+    $('.btn').on('mouseenter',function(e){
+        x = e.pageX - $(this).offset().left;
+        y = e.pageY - $(this).offset().top;
+        $(this).find('span').css({top:y, left:x})
+    })
+
+    $('.btn').on('mouseout',function(e){
+        x = e.pageX - $(this).offset().left;
+        y = e.pageY - $(this).offset().top;
+        $(this).find('span').css({top:y, left:x})
+    })
+})
+
+    // ****** Typing Text js******
+
+var typed = new Typed("#animate",{
+    strings: [
+        "Developer",
+        "Freelancer",
+        "Designer",
+        "Innovator"
+    ],
+    typeSpeed: 60,
+    backSpeed: 60,
+    loop: true
+});
+
+
+//progress bar
+
+$('.skills').waypoint(function () {
+    $('.skill-per').each(function(){
+        var $this = $(this);
+        var per = $this.attr('per');
+        $this.css("width",per+'%');
+        $({animatedValue: 0}).animate({animatedValue: per},{
+          duration: 1500,
+          step: function(){
+            $this.attr('per', Math.floor(this.animatedValue) + '%');
+          },
+          complete: function(){
+            $this.attr('per', Math.floor(this.animatedValue) + '%');
+          }
+        });
+      });
+
+}, {offset: '80%'});
+    
